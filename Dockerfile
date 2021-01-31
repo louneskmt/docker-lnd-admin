@@ -1,8 +1,4 @@
-ARG VERSION=v0.10.12
-
 FROM node:12-buster-slim AS builder
-
-ARG VERSION
 
 WORKDIR /build
 
@@ -10,7 +6,7 @@ RUN apt-get update
 
 RUN apt-get install -y git python3 build-essential
 
-RUN git clone --branch $VERSION https://github.com/janoside/lnd-admin .
+RUN git clone https://github.com/janoside/lnd-admin .
 
 RUN npm install
 
