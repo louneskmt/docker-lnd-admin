@@ -12,7 +12,7 @@ RUN apt-get install -y git python3 build-essential
 
 RUN git clone --branch $VERSION https://github.com/janoside/lnd-admin .
 
-RUN npm ci --production
+RUN npm install
 
 RUN rm -rf .git
 
