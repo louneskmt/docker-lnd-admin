@@ -6,7 +6,7 @@ RUN apt-get update
 
 RUN apt-get install -y git python3 build-essential
 
-RUN git clone https://github.com/janoside/lnd-admin .
+RUN git clone https://github.com/louneskmt/lnd-admin .
 
 RUN npm install
 
